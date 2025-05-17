@@ -1,6 +1,6 @@
 import {expect, vi} from "vitest";
 
-globalThis.fetch = vi.fn(async (url, options) => {
+globalThis.fetch = vi.fn(async () => {
     return new Response(JSON.stringify({message: "Success"}), {
         status: 200,
         headers: {"Content-Type": "application/json"}
