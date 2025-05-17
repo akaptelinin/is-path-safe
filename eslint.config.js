@@ -1,4 +1,6 @@
-module.exports = {
+import {defineConfig} from "eslint-define-config";
+
+export default defineConfig({
     root: true,
     env: {
         es2020: true,
@@ -19,4 +21,4 @@ module.exports = {
         "object-curly-spacing": ["error", "never"],
         "array-bracket-spacing": ["error", "never"]
     }
-};
+});
