@@ -3,13 +3,13 @@ about: "Suggest an improvement or new feature"
 labels: enhancement
 title: "[FEAT] "
 body:
-  - type: markdown
-    attributes:
-        value: "Explain the desired behavior."
-  - type: textarea
-    id: description
-    attributes:
-        label: Description
-        placeholder: I would like to see ...
-    validations:
-        required: true
+    - type: markdown
+      attributes:
+          value: "Explain the desired behavior."
+    - type: textarea
+      id: description
+      attributes:
+          label: Description
+          placeholder: I would like to see ...
+      validations:
+          required: true

@@ -3,15 +3,15 @@ about: "Report a reproducible bug"
 labels: bug
 title: "[BUG] "
 body:
-  - type: markdown
-    attributes:
-        value: "Describe the problem and steps to reproduce it."
-  - type: textarea
-    id: steps
-    attributes:
-        label: Steps to Reproduce
-        placeholder: |
-            1. ...
-            2. ...
-    validations:
-        required: true
+    - type: markdown
+      attributes:
+          value: "Describe the problem and steps to reproduce it."
+    - type: textarea
+      id: steps
+      attributes:
+          label: Steps to Reproduce
+          placeholder: |
+              1. ...
+              2. ...
+      validations:
+          required: true
