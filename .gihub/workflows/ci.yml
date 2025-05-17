@@ -25,6 +25,6 @@ jobs:
 name: CI
 "on":
     pull_request:
-        branches: [main]
+        branches: [master]
     push:
-        branches: [main]
+        branches: [master]
