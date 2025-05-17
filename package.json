@@ -1,25 +1,86 @@
 {
     "name": "is-path-safe",
     "version": "1.0.0",
+    "description": "Tiny cross‑platform helper that checks whether a filesystem path is safe to write to.",
     "type": "module",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "keywords": [
+        "path",
+        "filesystem",
+        "security",
+        "windows",
+        "unix",
+        "cross-platform",
+        "safe-path",
+        "fs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/akaptelinin/is-path-safe"
+    },
+    "bugs": {
+        "url": "https://github.com/akaptelinin/is-path-safe/issues"
+    },
+    "homepage": "https://github.com/akaptelinin/is-path-safe#readme",
+    "author": "akaptelinin",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "akaptelinin",
+            "url": "https://github.com/akaptelinin"
+        }
+    ],
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/akaptelinin"
+    },
     "exports": {
         ".": {
             "import": "./dist/index.js",
             "require": "./dist/index.js"
         }
     },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist/"
     ],
+    "sideEffects": false,
     "engines": {
         "node": ">=14"
     },
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "prettier": "prettier --write .",
+        "lint": "eslint . --ext .ts,.js",
+        "format": "npm run prettier && npm run lint",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "prepublishOnly": "npm run build && npm test",
+        "release": "npm version patch && npm publish"
     },
     "devDependencies": {
-        "@types/node": "^22.15.18"
+        "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+        "@types/node": "^22.15.18",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^7.18.0",
+        "eslint": "^8.57.1",
+        "prettier": "^3.5.3",
+        "typescript": "^5.4.5",
+        "vitest": "^1.5.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run format && npm run test"
+        }
+    },
+    "eslintConfig": {
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/recommended"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint"
+        ]
     }
 }
