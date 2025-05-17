@@ -1,0 +1,25 @@
+{
+    "name": "is-path-safe",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist/"
+    ],
+    "engines": {
+        "node": ">=14"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.18"
+    }
+}
