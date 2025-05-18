@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/akaptelinin/is-path-safe/compare/v1.0.3...v1.0.4) (2025-05-18)
+
+### Bug Fixes
+
+- eslint config ([d802243](https://github.com/akaptelinin/is-path-safe/commit/d802243830c13e45bd35c03f94caedf9b14a2ab7))
+
 ## [1.0.3](https://github.com/akaptelinin/is-path-safe/compare/v1.0.2...v1.0.3) (2025-05-18)
 
 ### Bug Fixes
