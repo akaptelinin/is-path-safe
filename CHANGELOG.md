@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/akaptelinin/is-path-safe/compare/v1.0.2...v1.0.3) (2025-05-18)
+
+### Bug Fixes
+
+- check semantic release ci ([7e036a1](https://github.com/akaptelinin/is-path-safe/commit/7e036a102251e03eb55fed55bdfb0cb2ef208bdd))
+
 ## [1.0.2](https://github.com/akaptelinin/is-path-safe/compare/v1.0.1...v1.0.2) (2025-05-18)
 
 ### Bug Fixes
