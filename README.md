@@ -27,8 +27,7 @@ The function bails out (`false`) if the user‑supplied string…
   * `/`, `/usr`, `/etc`, `/bin`, `/sbin`, `/dev`, `/proc`, `/sys`, `/run` on Unix
   * `C:\Windows`, `System32`, `Program Files`, DOS device names (`NUL`, `CON`, `COM1`, …) on Windows
 * resolves to a **raw UNC root** (`\\server\share`) or a Win32 device path (`\\?\C:\…`)
-* still looks shady after normalising mixed slashes and duplicate separators ([GitHub](https://github.com/akaptelinin/is-path-safe/raw/master/test/is-path-safe-test.test.ts)
-)
+* still looks shady after normalising mixed slashes and duplicate separators ([GitHub](./test/is-path-safe-test.test.ts))
 
 Everything else is considered safe (`true`) – including ordinary sub‑folders, files, dot‑files and UNC paths with an actual file component.
 
