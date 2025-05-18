@@ -30,5 +30,12 @@ export default [
                 node: true
             }
         }
+    },
+    {
+        files: ["README.md"],
+        rules: {
+            "no-undef": "off",
+            "no-unused-vars": "off"
+        }
     }
 ];

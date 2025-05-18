@@ -52,7 +52,7 @@
         "prepare": "husky install",
         "build": "tsc",
         "prettier": "prettier --write .",
-        "lint": "eslint . --ext .ts,.js --ignore-pattern dist/ --fix",
+        "lint": "eslint . --ext .ts,.js --ignore-pattern dist/ --ignore-pattern README.md --fix",
         "format": "npm run prettier && npm run lint",
         "test": "vitest run",
         "test:watch": "vitest",
