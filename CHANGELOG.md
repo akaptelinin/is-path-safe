@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/akaptelinin/is-path-safe/compare/v1.0.4...v1.0.5) (2025-05-18)
+
+### Bug Fixes
+
+- add package size to readme ([0f4271c](https://github.com/akaptelinin/is-path-safe/commit/0f4271cd6f725b7b5001908948c4a40dfb18e616))
+- README.md ([aca1b08](https://github.com/akaptelinin/is-path-safe/commit/aca1b08473b8802e228bd044c44d97d1fc70bcf1))
+
 ## [1.0.4](https://github.com/akaptelinin/is-path-safe/compare/v1.0.3...v1.0.4) (2025-05-18)
 
 ### Bug Fixes
