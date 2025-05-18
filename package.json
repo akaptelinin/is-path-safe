@@ -1,6 +1,6 @@
 {
     "name": "is-path-safe",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Tiny cross‑platform helper that checks whether a filesystem path is safe to write to.",
     "type": "module",
     "keywords": [
