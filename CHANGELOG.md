@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/akaptelinin/is-path-safe/compare/v1.0.5...v1.0.6) (2025-05-18)
+
+### Bug Fixes
+
+- add badges ro readme ([d469283](https://github.com/akaptelinin/is-path-safe/commit/d4692838399d0f29646fa3b89fe518122e62d20f))
+
 ## [1.0.5](https://github.com/akaptelinin/is-path-safe/compare/v1.0.4...v1.0.5) (2025-05-18)
 
 ### Bug Fixes
