@@ -1,6 +1,6 @@
 # is‑path‑safe
 
-Tiny **zero‑runtime** helper that answers one question:
+Tiny **zero‑runtime**, **dependency-free** helper that answers one question:
 
 > **Can I safely write to this path?**
 
@@ -8,11 +8,18 @@ It runs the *same* rules on **Linux, macOS and Windows**, auto‑picks ESM /�
 
 ---
 
+## Package Size
+
+* Minified: **1 kB**
+* Minified + Gzipped: **577 B**
+
+---
+
 ## Quick install
 
 ```bash
 npm i is-path-safe
-````
+```
 
 ---
 
