@@ -26,7 +26,6 @@ export function isPathSafe(targetPath: PathLike, opts: IsPathSafeOptions = {}): 
     /** 2 - direct detection of `..` regardless of slashes */
     if (/(^|[\\/])\.\.([\\/]|$)/.test(decoded)) return false;
 
-    /** ─────────────────────────────────────────────────────────── */
     if (opts.maxSafety) {
         /* special prefixes  \\?\  \\.\  //?/  //./ */
         if (/^[\\/]{2}[?.][\\/]/.test(raw)) return false;
