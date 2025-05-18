@@ -25,7 +25,6 @@ describe("isPathSafe()", () => {
     it("rejects non‑string or empty input", () => {
         // @ts-expect-error intentionally wrong type
         expect(isPathSafe(undefined)).toBe(false);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         expect(isPathSafe(123 as any)).toBe(false);
         expect(isPathSafe("")).toBe(false);
         expect(isPathSafe("   ")).toBe(false);
@@ -82,9 +81,8 @@ describe("isPathSafe()", () => {
     /* ──────────────────────────────────────────────────────────── */
     it("accepts normal Windows paths", () => {
         withMockedPlatform("win32", () => {
-            // eslint-disable-next-line no-useless-escape
             expect(isPathSafe("C:\Users\Bob\Desktop\test.txt")).toBe(true);
-            // eslint-disable-next-line no-useless-escape
+
             expect(isPathSafe("D:\workspace\project\file.js")).toBe(true);
         });
     });
@@ -127,7 +125,6 @@ describe("isPathSafe()", () => {
 
     it("accepts Windows UNC paths", () => {
         withMockedPlatform("win32", () => {
-            // eslint-disable-next-line no-useless-escape
             expect(isPathSafe("\\server\share\file.txt")).toBe(true);
         });
     });

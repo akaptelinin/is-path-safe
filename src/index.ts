@@ -47,8 +47,10 @@ export function isPathSafe(targetPath: PathLike, opts: IsPathSafeOptions = {}): 
             ["c:/windows", "c:/program files", "c:/program files (x86)"].some(f =>
                 unified.startsWith(f)
             )
-        )
+        ) {
             return false;
+        }
+
         if (/^c:\/progra~[12](\/|$)/i.test(unified)) return false;
 
         if (/(^|\/)(con|prn|aux|nul|com[1-9]|lpt[1-9])(\.|\/|$)/i.test(unified)) return false;
