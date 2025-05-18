@@ -1,5 +1,16 @@
 # is‑path‑safe
 
+![npm version](https://img.shields.io/npm/v/is-path-safe)  
+![license](https://img.shields.io/npm/l/is-path-safe)  
+![bundle size](https://img.shields.io/bundlephobia/minzip/is-path-safe)  
+![dependencies](https://img.shields.io/librariesio/release/npm/is-path-safe)  
+![node version](https://img.shields.io/node/v/is-path-safe)  
+![platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-green)  
+
+![Build CI](https://github.com/akaptelinin/is-path-safe/actions/workflows/ci.yml/badge.svg)  
+![Release CI](https://github.com/akaptelinin/is-path-safe/actions/workflows/release.yml/badge.svg)  
+![Codecov](https://codecov.io/gh/akaptelinin/is-path-safe/branch/master/graph/badge.svg)  
+
 Tiny **zero‑runtime**, **dependency-free** helper that answers one question:
 
 > **Can I safely write to this path?**
