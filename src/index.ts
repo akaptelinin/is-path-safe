@@ -26,20 +26,17 @@ export function isPathSafe(targetPath: PathLike, opts: IsPathSafeOptions = {}): 
     /** 2 - direct detection of `..` regardless of slashes */
     if (/(^|[\\/])\.\.([\\/]|$)/.test(decoded)) return false;
 
-    if (opts.maxSafety) {
-        /* special prefixes  \\?\  \\.\  //?/  //./ */
-        if (/^[\\/]{2}[?.][\\/]/.test(raw)) return false;
+    if (!opts.maxSafety) return true;
 
-        /* UNC root  \\server\share   //server/share   (exactly two segments) */
-        if (/^[\\/]{2}[^\\/]+[\\/][^\\/]+[\\/]?$/.test(raw)) return false;
-    }
-
-    /* ── continue as before ───────────────────────────────────── */
     const unified = decoded.replace(/[\\/]+/g, "/").toLowerCase();
 
     const isWin = process.platform === "win32";
 
-    if (!opts.maxSafety) return true;
+    /* special prefixes  \\?\  \\.\  //?/  //./ */
+    if (/^[\\/]{2}[?.][\\/]/.test(raw)) return false;
+
+    /* UNC root  \\server\share   //server/share   (exactly two segments) */
+    if (/^[\\/]{2}[^\\/]+[\\/][^\\/]+[\\/]?$/.test(raw)) return false;
 
     /* system directories, 8.3 names, device files — everything as before */
     if (isWin) {
