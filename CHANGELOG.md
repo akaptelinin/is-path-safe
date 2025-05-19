@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/akaptelinin/is-path-safe/compare/v1.0.6...v1.0.7) (2025-05-19)
+
+### Bug Fixes
+
+- optimised for maxSafety = false ([94d27e6](https://github.com/akaptelinin/is-path-safe/commit/94d27e6fd4314e2d59b2590e8674c08edec70046))
+
 ## [1.0.6](https://github.com/akaptelinin/is-path-safe/compare/v1.0.5...v1.0.6) (2025-05-18)
 
 ### Bug Fixes
